@@ -149,11 +149,6 @@ body {
   background-color: #fbfbfb;
 }
 
-
-/*#searchBox-inner input {
-  box-shadow: none;
-}*/
-
 .searchBox-inner input:focus {
   outline: none;
   border: none;
@@ -312,6 +307,7 @@ body {
 }
 
 .message {
+  background: url("pattern.svg");
   padding: 0 !important;
   margin: 0 !important;
  
@@ -547,9 +543,7 @@ body {
     padding: 0 !important;
     margin: 0 !important;
     height: 100%;
-    /*width: 100%;*/
     border-left: 1px solid rgba(0, 0, 0, .08);
-    /*overflow-y: auto;*/
   }
   .message {
     height: calc(100% - 140px);
@@ -592,6 +586,7 @@ body {
 	width:100%;
 }
 .chat {
+
     list-style: none;
 	width:100%;
 }
@@ -599,6 +594,7 @@ body {
     padding: 0.2rem;
    
 }
+
 .usuarios li{
 	 list-style: circle solid ;
       color:green;
@@ -611,13 +607,6 @@ body {
 }
 #conversation{
      background-size: cover;
-}
-
-
-
-body{
-   
-    
 }
 
 #login-dp{
