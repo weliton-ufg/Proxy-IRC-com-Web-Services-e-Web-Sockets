@@ -50,32 +50,31 @@ io.on("connection", function (client) {
 		});
 		/**Emitida quando um usuário desconecta do IRC, deixando a matriz especificada de canais.*/
 		clientIrc.addListener('quit', function (nick, reason, channels, message)  {
-			
+			console.log("quit");
 		});
 		/**Conforme o evento kick, mas apenas emite para o canal subscrito.  */
 		clientIrc.addListener('kick#channel', function (nick, reason, channels, message) {
-			
+			console.log("kick#channel");
 		}); 
 
 		/**Emitido quando um usuário é morto do servidor IRC. Canais é um conjunto de canais que 
 		* o usuário morto estava no qual são conhecidos pelo cliente */
 		clientIrc.addListener('kill', function (nick, reason, channels, message) {
-			
+			console.log("kill");
 		}); 
 		
 		/**Emitido quando uma mensagem é enviada para qualquer canal (ou seja , exatamente o mesmo 
 		que o evento da mensagem , mas excluindo as mensagens privadas) */
 		clientIrc.addListener('message#', function  (nick, to, text, message) {
-			
+			console.log("'message#");
 		}); 
 		/**Emitido sempre que o servidor responde com uma mensagem de tipo de erro. */
 		clientIrc.addListener('error', function  (message) {
 			console.log("Erro");
 		});
 		/**Emite sempre que um usuário executa uma ação (por exemplo / me waves ).  */
-		client.on("action", function (from, to, text, message) {
+		clientIrc.addListener("action", function (from, to, text, message) {
 			clientIrc.say(channel, msg);
-
 		});
 
 		client.on("disconnect", function () {
@@ -85,8 +84,7 @@ io.on("connection", function (client) {
 
 		client.on("send", function (msg) {
 			console.log("MessageTeste: " + msg);
-			clientIrc.say(channel, msg);
-
+			clientIrc.say(channel, msg);			
 		});
 	});
 
