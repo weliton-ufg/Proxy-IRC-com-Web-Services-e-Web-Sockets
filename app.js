@@ -72,15 +72,12 @@ io.on("connection", function (client) {
 		clientIrc.addListener('error', function  (message) {
 			console.log("Erro");
 		});
-		clientIrc.addListener('error', function  (message) {
-			console.log("Erro");
-		});
-
+		/**Emite sempre que um usuário executa uma ação (por exemplo / me waves ).  */
 		client.on("action", function (from, to, text, message) {
 			clientIrc.say(channel, msg);
 
 		});
-		/**Emite sempre que um usuário executa uma ação (por exemplo / me waves ).  */
+
 		client.on("disconnect", function () {
 				clientIrc.disconnect();
 				console.log("Disconnect");
