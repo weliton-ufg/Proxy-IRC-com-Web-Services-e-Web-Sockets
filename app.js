@@ -2,9 +2,11 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var irc = require('irc');
-
+var express = require("express");
+app.use(express.static(__dirname));
 
 app.get('/', function (req, res) {
+	res.sendFile('/teste.html');
 	res.send('server is running');
 });
 
@@ -67,4 +69,6 @@ io.on("connection", function (client) {
 
 http.listen(3000, function () {
 	console.log('listening on port 3000');
+	console.log('Acesse via Url');
+	console.log('localhost:3000');
 });
