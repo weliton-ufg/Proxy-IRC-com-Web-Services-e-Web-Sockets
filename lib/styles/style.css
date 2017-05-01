@@ -469,7 +469,7 @@ body {
 @media screen and (max-width: 700px) {
   .app {
     top: 0;
-    height: 100%;
+    height: 100%; 
   }
   .heading {
     height: 70px;
@@ -586,8 +586,7 @@ body {
 	width:100%;
 }
 .chat {
-
-    list-style: none;
+  list-style: none;
 	width:100%;
 }
 .chat li {
@@ -659,89 +658,3 @@ body {
         border-top:0 none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-.other .msg {
-    order: 1;
-    border-top-left-radius: 0px;
-    box-shadow: -1px 2px 0px #D4D4D4;
-}
-.other:before {
-    content: "";
-    position: relative;
-    top: 0px;
-    right: 0px;
-    left: 40px;
-    width: 0px;
-    height: 0px;
-    border: 5px solid #fff;
-    border-left-color: transparent;
-    border-bottom-color: transparent;
-}
-
-.self {
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.self .msg {
-    order: 1;
-    border-bottom-right-radius: 0px;
-    box-shadow: 1px 2px 0px #D4D4D4;
-}
-
-.msg span {
-	font-size: 0.7rem;
-    color: #969898;
-}
-
-.msg {
-    background: white;
-    min-width: 50px;
-    padding: 10px;
-    border-radius: 2px;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
-}
-.msg p {
-    font-size: 0.8rem;
-    margin: 0 0 0.2rem 0;
-    color: #777;
-}
-
-
-
-.msg time {
-    font-size: 0.7rem;
-    color: #ccc;
-    margin-top: 3px;
-    float: right;
-    cursor: default;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-.msg time:before{
-    content:"\f017";
-    color: #ddd;
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-right: 4px;
-}
-*/

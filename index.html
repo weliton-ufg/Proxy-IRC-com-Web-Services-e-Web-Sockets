@@ -10,55 +10,53 @@
   <!-- Font Awesome File -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  
-  
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
-    <script src="lib/assets/js.js"></script>
- 
+
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+  <script src="lib/assets/js.js"></script>
+
 </head>
 
 <body>
-	
-	<div class="nickname_container" id="nick" >
-	
-				
-				<div id="login-dp" style="background: url('bg.webp') no-repeat fixed center;"  >
-					 <div class="row" >
-							<div class=" col-md-12 " style="margin-top:10%;">
-							
-								
-								<div style="width:35%;position:float right" class="container" >
-									<form id="submit" class="form" role="form" method="post" accept-charset="UTF-8" id="login-nav">
-										<div class="panel panel-default">
-											<div class="panel-heading"> User Name</div>
-												<div class="panel-body">
-												<div class="form-group">
-													 <input type="text" class="form-control" id="nickname" placeholder="Nink name" required>
-													 <input type="text" class="form-control" id="channel" placeholder="#channel   ex: #p2-g4" required style="margin-top:5px">
-												</div>
-												
-												<div class="form-group">
-													 <button type="submit" class="btn btn-info btn-block">Entrar</button>
-												</div>
-												<div id="msgvalidalogin" ></div>
-											</div>
-										</div>										
-								
-								    </form>
 
-								</div>
+  <div class="nickname_container" id="nick">
 
-							</div>
-							
-					 </div>
-				</div>
-			
-	</div>
-	
-	
-	
-  <div  id="chat" hidden class="container app">
+
+    <div id="login-dp" style="background: url('bg.webp') no-repeat fixed center;">
+      <div class="row">
+        <div class=" col-md-12 " style="margin-top:10%;">
+
+
+          <div style="width:35%;position:float right" class="container">
+            <form id="submit" class="form" role="form" method="post" accept-charset="UTF-8" id="login-nav">
+              <div class="panel panel-default">
+                <div class="panel-heading"> User Name</div>
+                <div class="panel-body">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="nickname" placeholder="Nink name" required>
+                    <input type="text" class="form-control" id="channel" placeholder="#channel   ex: #p2-g4" required style="margin-top:5px">
+                  </div>
+
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-info btn-block">Entrar</button>
+                  </div>
+                  <div id="msgvalidalogin"></div>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="chat" hidden class="container app">
     <div class="row app-one">
 
       <div class="col-sm-4 side">
@@ -69,15 +67,15 @@
               <div class="heading-avatar-icon">
                 <img src="lib/styles/user2.png">
               </div>
-			 
+
             </div>
-			<div class="col-sm-4 col-xs-4 heading-name">
-				<a class="heading-name-meta" id="name">
-				</a>
-				<span class="heading-online">Online</span>
-			</div>
-			
-			
+            <div class="col-sm-4 col-xs-4 heading-name">
+              <a class="heading-name-meta" id="name">
+              </a>
+              <span class="heading-online">Online</span>
+            </div>
+
+
             <div class="col-sm-1 col-xs-1  heading-dot  pull-right">
               <i class="fa fa-ellipsis-v fa-2x  pull-right" aria-hidden="true"></i>
             </div>
@@ -92,7 +90,7 @@
           <!-- Search Box End -->
           <!-- sideBar -->
           <div class="row sideBar usuarios">
-            
+
           </div>
           <!-- Sidebar End -->
         </div>
@@ -167,32 +165,32 @@
           <ol class="chat">
 
           </ol>
-          <a id="aqui"></a>     
+          <a id="aqui"></a>
         </div>
         <!-- Message Box End -->
 
         <!-- Reply Box -->
         <div class="row reply">
-		
-		
-          <div class="col-sm-1 col-xs-1 reply-emojis" id="dropdownMenu2" data-toggle="dropdown" haspopup="true" >
+
+
+          <div class="col-sm-1 col-xs-1 reply-emojis" id="dropdownMenu2" data-toggle="dropdown" haspopup="true">
             <i class="fa fa-smile-o fa-2x"></i>
           </div>
-		  
-		  
-		  
-		  
+
+
+
+
           <div class="col-sm-9 col-xs-9 reply-main">
-            <textarea class="form-control" rows="1" id="textarea""></textarea>
+            <textarea class="form-control" rows="1" id="textarea" "></textarea>
           </div>
-          <div class="col-sm-1 col-xs-1 reply-recording"  id='btnemogicon'>
-            <i class="fa fa-microphone fa-2x" aria-hidden="true"></i>
+          <div class="col-sm-1 col-xs-1 reply-recording "  id='btnemogicon'>
+            <i class="fa fa-microphone fa-2x " aria-hidden="true "></i>
           </div>
 		  
 		  
 
-          <div class="col-sm-1 col-xs-1 reply-send" id='btnenvia'>
-            <i class="fa fa-send fa-2x" aria-hidden="true"></i>
+          <div class="col-sm-1 col-xs-1 reply-send " id='btnenvia'>
+            <i class="fa fa-send fa-2x " aria-hidden="true "></i>
           </div>
         </div>
         <!-- Reply Box End -->

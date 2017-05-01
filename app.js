@@ -23,7 +23,6 @@ io.on("connection", function (client) {
 				console.log(name);
 				console.log("/join " + channel);
 				clientIrc.say(channel, "Conectado");
-				client.emit("update", "Você se conectou ao bate-papo.");
 				console.log("Joined: " + name);
 
 			});
@@ -35,6 +34,18 @@ io.on("connection", function (client) {
 			console.log(from + ' => ' + to + ': ' + text);
 			console.log("Message: " + text);
 			client.emit('chat',from, text);
+		});
+
+		clientIrc.addListener('names', function (channel, nicks) {
+			console.log("Teste Names");
+			console.log("channel: " + channel);
+			console.log("nicks: " + nicks);
+			client.emit("update", "" ,nicks);
+		});
+
+		clientIrc.addListener('join', function (channel, nick) {
+			console.log("Teste join");
+			client.emit("update", nick);
 		});
 
 		client.on("send", function (msg) {
