@@ -66,7 +66,7 @@ io.on("connection", function (client) {
 		/**Emitido quando uma mensagem é enviada para qualquer canal (ou seja , exatamente o mesmo 
 		que o evento da mensagem , mas excluindo as mensagens privadas) */
 		clientIrc.addListener('message#', function  (nick, to, text, message) {
-			console.log("'message#");
+			console.log("message#");
 		}); 
 		/**Emitido sempre que o servidor responde com uma mensagem de tipo de erro. */
 		clientIrc.addListener('error', function  (message) {
@@ -76,6 +76,15 @@ io.on("connection", function (client) {
 		clientIrc.addListener("action", function (from, to, text, message) {
 			clientIrc.say(channel, msg);
 		});
+		
+		clientIrc.on('TOPIC', function (data) {
+		 	/**Data.receiver	O canal em que o tópico foi alterado, prefixado por um hash (#)
+               Data.sender	O nick da pessoa que mudou o tópico
+               Data.message	A nova mensagem de tópico */
+           // var message = 'Hmm, seems like ' + data.sender + ' changed the topic of ' + data.receiver + ' to: ' + data.message;
+           //  client.say(data.receiver, message);
+             console.log(data);
+        });
 
 		client.on("disconnect", function () {
 				clientIrc.disconnect();
