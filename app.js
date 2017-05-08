@@ -81,9 +81,9 @@ io.on("connection", function (client) {
 		 	/**Data.receiver	O canal em que o tópico foi alterado, prefixado por um hash (#)
                Data.sender	O nick da pessoa que mudou o tópico
                Data.message	A nova mensagem de tópico */
-           // var message = 'Hmm, seems like ' + data.sender + ' changed the topic of ' + data.receiver + ' to: ' + data.message;
-           //  client.say(data.receiver, message);
-             console.log(data);
+                // var message = 'Hmm, seems like ' + data.sender + ' changed the topic of ' + data.receiver + ' to: ' + data.message;
+                 //  client.say(data.receiver, message);
+                 console.log(data);
         });
 
 		client.on("disconnect", function () {
