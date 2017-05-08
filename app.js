@@ -6,7 +6,7 @@ var express = require("express");
 app.use(express.static(__dirname));
 
 app.get('/', function (req, res) {
-	res.sendFile('/teste.html');
+	res.sendFile('/index.html');
 	res.send('server is running');
 });
 
