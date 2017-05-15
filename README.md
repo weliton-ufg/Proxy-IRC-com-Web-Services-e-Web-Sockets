@@ -49,6 +49,8 @@ Consulte nossa Documentação na [Wiki](https://gitlab.com/ad-si-2017-1/p2-g4/wi
 
 **Version 1.0.0** [https://gitlab.com/ad-si-2017-1/p2-g4/tags/version_v1.0]  
 
+* Interface Web e Documentação inicial
+
 ### Testando O Bate Papo
 
 <img src="Animation.gif" height="60%" width="80%" />
