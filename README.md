@@ -42,8 +42,17 @@ Para o desenvolvimento do projeto foram envolvidas os seguintes aspectos técnic
 - **WebSockets:** [Socket.io](https://imasters.com.br/tecnologia/redes-e-servidores/conectando-no-socket-io-o-basico/?trace=1519021197&source=single)
 
 
-### Documentação na Wiki (Em Construção) :construction_worker:
+# Documentação na Wiki (Em Construção) :construction_worker:
 Consulte nossa Documentação na [Wiki](https://gitlab.com/ad-si-2017-1/p2-g4/wikis/home) 
+
+## Changelog
+
+A nomenclatura das Changelogs ficaram definidas como *número.release.build*.
+
+[***Version 1.0.0***](https://gitlab.com/ad-si-2017-1/p2-g4/tags/version_v1.0)  
+
+* Interface Web 
+* Documentação inicial
 
 ### Testando O Bate Papo
 
