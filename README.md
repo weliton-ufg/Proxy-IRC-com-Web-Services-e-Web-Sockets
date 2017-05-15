@@ -47,9 +47,12 @@ Consulte nossa Documentação na [Wiki](https://gitlab.com/ad-si-2017-1/p2-g4/wi
 
 ### Changelog
 
-**Version 1.0.0** [https://gitlab.com/ad-si-2017-1/p2-g4/tags/version_v1.0]  
+A nomenclatura das Changelogs ficaram definidas como *número.release.build*.
 
-* Interface Web e Documentação inicial
+***Version 1.0.0*** [https://gitlab.com/ad-si-2017-1/p2-g4/tags/version_v1.0]  
+
+* Interface Web 
+* Documentação inicial
 
 ### Testando O Bate Papo
 
