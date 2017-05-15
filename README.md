@@ -49,7 +49,7 @@ Consulte nossa Documentação na [Wiki](https://gitlab.com/ad-si-2017-1/p2-g4/wi
 
 A nomenclatura das Changelogs ficaram definidas como *número.release.build*.
 
-(***Version 1.0.0***)[https://gitlab.com/ad-si-2017-1/p2-g4/tags/version_v1.0]  
+[***Version 1.0.0***](https://gitlab.com/ad-si-2017-1/p2-g4/tags/version_v1.0)  
 
 * Interface Web 
 * Documentação inicial
