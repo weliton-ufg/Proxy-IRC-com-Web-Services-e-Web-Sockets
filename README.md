@@ -5,11 +5,6 @@
 ### Membros:
 
 * **Weliton Marcos** - Líder/Desenvolvedor :crown: :computer:
-
-* **Gilmar Bernades** - Desenvolvedor :computer:
-* **João Victor Guimarães** - Desenvolvedor :computer:
-
-* **Gerson Rosolim** - Documentador :writing_hand:
 * **Yan Rocha** - Documentador :writing_hand:
 
 ## Especificação
@@ -42,8 +37,8 @@ Para o desenvolvimento do projeto foram envolvidas os seguintes aspectos técnic
 - **WebSockets:** [Socket.io](https://imasters.com.br/tecnologia/redes-e-servidores/conectando-no-socket-io-o-basico/?trace=1519021197&source=single)
 
 
-# Documentação na Wiki (Em Construção) :construction_worker:
-Consulte nossa Documentação na [Wiki](https://gitlab.com/ad-si-2017-1/p2-g4/wikis/home) 
+# Documentação na Wiki
+Consulte nossa Documentação na [Wiki](https://gitlab.com/ad-si-2017-1/p2-g4/wikis/home) !
 
 ## Changelog
 
@@ -54,6 +49,7 @@ A nomenclatura das Changelogs ficaram definidas como *número.release.build*.
 * Interface Web 
 * Documentação inicial
 
-### Testando O Bate Papo
+[***Version 1.1.0***](https://gitlab.com/ad-si-2017-1/p2-g4/tags/version_v1.1)
 
-<img src="Animation.gif" height="60%" width="80%" />
+* Inclusão de novos comandos.
+* Inclusão de novas informações na Documentação
